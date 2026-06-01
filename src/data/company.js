@@ -1,3 +1,8 @@
+const whatsappPhone = '919820335175';
+
+export const whatsappMessage =
+  'Hello, I would like to inquire about non-ferrous metals, scrap trading, or recycling solutions with Sha Mulchand Navalram Jain.';
+
 export const company = {
   legalName: 'Sha Mulchand Navalram Jain',
   shortName: 'SMNJ',
@@ -5,7 +10,7 @@ export const company = {
   tagline: 'Non-Ferrous Metals · Scrap · Recycling',
   phone: '+91 98203 35175',
   phoneHref: 'tel:+919820335175',
-  whatsapp: 'https://wa.me/919820335175',
+  whatsapp: `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(whatsappMessage)}`,
   email: 'shamnjain@yahoo.in',
   mapUrl: 'https://maps.app.goo.gl/YEocpGFo9cYaAjro7',
   formspree: 'https://formspree.io/f/mblanblk',
