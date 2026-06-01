@@ -57,7 +57,6 @@ export const media = {
   },
   brand: {
     logo: '/img/brand/snj-logo.png',
-    wordmark: '/img/brand/wordmark.svg',
   },
   audio: '/img/products/snj-audio.mp3',
 };

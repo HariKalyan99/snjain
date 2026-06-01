@@ -1,0 +1,18 @@
+{
+  "name": "Sha Mulchand Navalram Jain",
+  "short_name": "SMNJ",
+  "description": "Non-ferrous metals, scrap trading and recycling solutions since 1965.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141212",
+  "theme_color": "#141212",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/brand/snj-logo.png",
+      "sizes": "1000x1000",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
