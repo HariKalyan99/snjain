@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { processSteps } from '../../data/site';
@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ProcessTimeline() {
   const sectionRef = useRef(null);
   const trackRef = useRef(null);
+  const [activeStep, setActiveStep] = useState(0);
 
   useEffect(() => {
     const mm = gsap.matchMedia();
@@ -34,12 +35,23 @@ export default function ProcessTimeline() {
           scrub: 1,
           invalidateOnRefresh: true,
           anticipatePin: 1,
+          onUpdate: (self) => {
+            const index = Math.min(
+              processSteps.length - 1,
+              Math.floor(self.progress * processSteps.length),
+            );
+            setActiveStep(index);
+          },
         },
       });
+
+      const pin = tween.scrollTrigger?.pin;
+      if (pin) gsap.set(pin, { zIndex: 40 });
 
       return () => {
         tween.scrollTrigger?.kill();
         tween.kill();
+        setActiveStep(0);
       };
     });
 
@@ -77,13 +89,13 @@ export default function ProcessTimeline() {
           <div
             key={step.no}
             className={`process-card flex h-full w-[36vw] max-w-[520px] shrink-0 flex-col justify-center border-l border-white/10 px-10 2xl:px-16 ${
-              i === 0 ? 'bg-white/[0.02]' : ''
+              i === activeStep ? 'bg-white/[0.03]' : ''
             }`}
           >
             <span className="font-display text-7xl font-extrabold text-white/10">{step.no}</span>
             <h3 className="mt-6 font-display text-3xl font-bold uppercase tracking-tight">{step.title}</h3>
             <p className="mt-5 max-w-sm text-base leading-relaxed text-steel-200">{step.body}</p>
-            <div className="mt-8 h-px w-16 bg-red" />
+            <div className={`mt-8 h-px w-16 transition-colors duration-300 ${i === activeStep ? 'bg-red' : 'bg-white/20'}`} />
           </div>
         ))}
 
@@ -96,16 +108,39 @@ export default function ProcessTimeline() {
         aria-hidden="true"
       />
 
-      {/* Step progress rail — desktop */}
-      <div className="pointer-events-none absolute bottom-10 left-0 right-0 z-10 hidden px-10 lg:block 2xl:px-24">
-        <div className="flex max-w-[52vw] items-center gap-2 2xl:max-w-[920px]">
-          {processSteps.map((step) => (
-            <span
-              key={step.no}
-              className="h-px flex-1 bg-white/15 first:bg-red/60"
-              title={step.title}
-            />
-          ))}
+      {/* Progress rail — synced to horizontal scroll (desktop) */}
+      <div
+        className="pointer-events-none absolute bottom-10 left-0 right-0 z-10 hidden px-10 lg:block 2xl:px-24"
+        aria-hidden="true"
+      >
+        <div className="max-w-[52vw] 2xl:max-w-[920px]">
+          <div
+            className="flex items-center gap-2"
+            role="progressbar"
+            aria-valuenow={activeStep + 1}
+            aria-valuemin={1}
+            aria-valuemax={processSteps.length}
+            aria-label={`Process step ${activeStep + 1} of ${processSteps.length}: ${processSteps[activeStep]?.title}`}
+          >
+            {processSteps.map((step, i) => (
+              <span
+                key={step.no}
+                className={`h-0.5 flex-1 transition-colors duration-300 ${
+                  i < activeStep ? 'bg-red/45' : i === activeStep ? 'bg-red' : 'bg-white/15'
+                }`}
+              />
+            ))}
+          </div>
+          <p className="mt-3 flex items-center justify-between text-[10px] uppercase tracking-[0.16em]">
+            <span className="text-white/70">
+              <span className="text-red">{processSteps[activeStep]?.no}</span>
+              {' · '}
+              {processSteps[activeStep]?.title}
+            </span>
+            <span className="text-white/35">
+              {activeStep + 1} / {processSteps.length}
+            </span>
+          </p>
         </div>
       </div>
 
