@@ -26,6 +26,8 @@ export const company = {
   ],
 };
 
+
+
 export const stats = [
   { value: 60, suffix: '+', label: 'Years in operation', sub: 'Trading since 1965' },
   { value: 25, suffix: '+', label: 'Markets served', sub: 'Across India & overseas' },
