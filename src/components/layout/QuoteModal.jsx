@@ -70,7 +70,7 @@ export default function QuoteModal() {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[120] flex items-start justify-center overflow-y-auto bg-ink/70 px-4 py-8 backdrop-blur-sm sm:py-16"
+          className="fixed inset-0 z-[2100] flex items-start justify-center overflow-y-auto bg-ink/70 px-4 py-8 backdrop-blur-sm sm:py-16"
           onClick={(e) => e.target === e.currentTarget && closeQuote()}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

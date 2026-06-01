@@ -66,7 +66,7 @@ export default function TradeMap({ active, onSelect }) {
   const hubPosition = useMemo(() => [HUB.lat, HUB.lng], []);
 
   return (
-    <div className="trade-map relative h-[360px] w-full overflow-hidden border border-white/10 bg-ink sm:h-[400px] lg:h-[460px]">
+    <div className="trade-map relative z-0 isolate h-[360px] w-full overflow-hidden border border-white/10 bg-ink sm:h-[400px] lg:h-[460px]">
       <MapContainer
         center={hubPosition}
         zoom={3}
