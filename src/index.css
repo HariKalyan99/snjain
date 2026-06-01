@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #141212;
+    --red: #ff372f;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-white text-ink font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--red);
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .display-xl {
+    @apply font-display font-extrabold uppercase leading-[0.95] tracking-tight;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-red;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-red;
+  }
+
+  .link-underline {
+    @apply relative inline-flex items-center gap-2 font-medium;
+  }
+
+  .hairline {
+    @apply border-steel-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .grain {
+    background-image: radial-gradient(rgba(20, 18, 18, 0.04) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Leaflet — dark trade map */
+.trade-map .leaflet-container {
+  background: #141212;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.trade-map .leaflet-control-attribution {
+  background: rgba(20, 18, 18, 0.85) !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-size: 9px;
+  padding: 2px 6px;
+  margin: 0;
+}
+
+.trade-map .leaflet-control-attribution a {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.trade-map .leaflet-control-zoom {
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.trade-map .leaflet-control-zoom a {
+  background: #141212 !important;
+  color: #fff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.trade-map .leaflet-control-zoom a:hover {
+  background: #ff372f !important;
+  color: #fff !important;
+}
+
+.trade-map .leaflet-control-zoom-in {
+  border-radius: 0;
+}
+
+.trade-map .leaflet-control-zoom-out {
+  border-bottom: none !important;
+  border-radius: 0;
+}
+
+.trade-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.trade-marker {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.trade-marker__dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #141212;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.trade-marker--hub .trade-marker__dot {
+  width: 12px;
+  height: 12px;
+  background: #ff372f;
+}
+
+.trade-marker--active .trade-marker__dot {
+  background: #ff372f;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.trade-marker__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.trade-marker--active .trade-marker__ring {
+  opacity: 1;
+  border-color: rgba(255, 55, 47, 0.55);
+  animation: trade-marker-pulse 1.8s ease-out infinite;
+}
+
+@keyframes trade-marker-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
