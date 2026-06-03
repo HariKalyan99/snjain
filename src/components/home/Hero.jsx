@@ -73,23 +73,24 @@ export default function Hero() {
       className="relative flex h-[100svh] max-h-[100svh] flex-col overflow-hidden bg-ink"
     >
       <motion.div style={{ y, scale }} className="pointer-events-none absolute inset-0">
-        <img
-          src={media.hero.poster}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0" aria-hidden="true">
+          <img
+            src={media.hero.poster}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover grayscale"
+          />
+          <div className="absolute inset-0 bg-black/65" />
+        </div>
         {!usePoster && (
           <video
             ref={videoRef}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 z-10 h-full w-full object-cover"
             src={media.hero.video}
             autoPlay
             muted
             loop
             playsInline
             preload="auto"
-            poster={media.hero.poster}
             aria-hidden="true"
             onError={() => setUsePoster(true)}
           />
