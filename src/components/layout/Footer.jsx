@@ -77,10 +77,32 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-start justify-between gap-4 py-8 text-xs text-white/40 sm:flex-row sm:items-center">
+        <div className="flex flex-col items-start justify-between gap-4 py-8 text-xs text-white/40 sm:flex-row sm:items-center sm:gap-6">
           <p>
             © {year} {company.legalName}. All rights reserved.
           </p>
+          <div className="flex flex-wrap items-center gap-2 normal-case tracking-normal text-white/55">
+            <span>Developed by</span>
+            <a
+              href="https://tronzlabs.com"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 font-medium transition-opacity hover:opacity-80"
+            >
+              <span className="whitespace-nowrap">
+                <span className="text-white">Tron</span>
+                <span className="text-red underline underline-offset-2">z</span>
+                <span className="text-white/80">labs</span>
+              </span>
+              <img
+                src="/img/brand/tronzlabs-logo.png"
+                alt="Tronzlabs logo"
+                width={16}
+                height={16}
+                className="h-4 w-4 shrink-0 object-contain"
+              />
+            </a>
+          </div>
           <p className="uppercase tracking-[0.2em]">Non-Ferrous Metals · Scrap · Recycling</p>
         </div>
       </div>
