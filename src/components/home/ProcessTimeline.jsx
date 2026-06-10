@@ -72,7 +72,7 @@ export default function ProcessTimeline() {
             From source to dispatch.
           </h2>
           <p className="mt-7 max-w-md text-lg leading-relaxed text-steel-200">
-            A disciplined flow that turns recovered metal into furnace-ready material — sorted, inspected and
+            A disciplined flow that turns recovered metal into furnace-ready material, sorted, inspected and
             documented at every stage.
           </p>
           <div className="mt-12 flex items-center gap-6">
@@ -151,7 +151,7 @@ export default function ProcessTimeline() {
           From source to dispatch.
         </h2>
         <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-200">
-          A disciplined flow that turns recovered metal into furnace-ready material — sorted, inspected and
+          A disciplined flow that turns recovered metal into furnace-ready material, sorted, inspected and
           documented at every stage.
         </p>
         <div className="mt-12 space-y-px border-t border-white/10">

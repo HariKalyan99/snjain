@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { company } from '../../data/company';
+import PhoneLink from '../ui/PhoneLink';
 import { navLinks } from '../../data/nav';
 import { useQuote } from '../../context/QuoteContext';
 import { media } from '../../data/media';
@@ -50,9 +51,7 @@ export default function Footer() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Contact</p>
             <ul className="mt-6 space-y-4 text-sm text-white/70">
               <li>
-                <a href={company.phoneHref} className="transition-colors hover:text-white">
-                  {company.phone}
-                </a>
+                <PhoneLink className="transition-colors hover:text-white" />
               </li>
               <li>
                 <a href={`mailto:${company.email}`} className="transition-colors hover:text-white">

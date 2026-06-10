@@ -14,7 +14,7 @@ export default function Infrastructure() {
         index="07"
         eyebrow="Infrastructure"
         title={['The facility', 'behind the supply.']}
-        intro="A dedicated Bhiwandi operation — warehousing, sorting, processing, quality control and transport, built to move industrial volume reliably."
+        intro="A dedicated Bhiwandi operation with warehousing, sorting, processing, quality control and transport, built to move industrial volume reliably."
         image={media.infrastructure.hero}
       />
 
@@ -23,7 +23,7 @@ export default function Infrastructure() {
           <SectionHeading
             eyebrow="Our operation"
             title={['Five capabilities,', 'one disciplined flow.']}
-            intro="Each stage of the facility is built around a single goal — that what leaves the warehouse matches exactly what was ordered."
+            intro="Each stage of the facility is built around a single goal: ensuring what leaves the warehouse matches exactly what was ordered."
           />
 
           <div className="mt-16 space-y-px">

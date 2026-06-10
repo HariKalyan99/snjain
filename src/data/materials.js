@@ -17,6 +17,7 @@ export const materials = [
       { name: 'Aluminium AC Punching Scrap', image: g.aluminiumAcPunching },
       { name: 'Aluminium Cable Wire Scrap', image: g.aluminiumCable },
       { name: '6063 Aluminium Extrusion Scrap', image: g.aluminium6063 },
+      { name: 'Aluminium Foil Wrap', image: g.aluminiumFoil },
     ],
     specs: ['Sorted by alloy & form', 'Low contamination', 'Furnace & extrusion ready'],
     applications: ['Extrusion', 'Die casting', 'Automotive components', 'Construction sections'],
@@ -84,7 +85,7 @@ export const materials = [
     image: m.recyclableMetals,
     tagline: 'Recovered streams returned to circulation.',
     description:
-      'Mixed and process recyclable non-ferrous streams collected, segregated and prepared for recovery — the raw input that keeps the circular metals economy moving.',
+      'Mixed and process recyclable non-ferrous streams collected, segregated and prepared for recovery, the raw input that keeps the circular metals economy moving.',
     grades: [
       { name: 'Cable & Wire Recovery', image: g.cableRecovery },
       { name: 'Process Scrap', image: g.processScrap },

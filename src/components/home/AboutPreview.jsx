@@ -36,14 +36,14 @@ export default function AboutPreview() {
             </Reveal>
             <Reveal custom={2}>
               <p className="mt-7 text-base leading-relaxed text-steel-600 sm:text-lg">
-                Sha Mulchand Navalram Jain was built on a single idea — to do business with integrity. Over
+                Sha Mulchand Navalram Jain was built on a single idea: to do business with integrity. Over
                 generations, that idea became a legacy defined by trust, precision and quiet excellence.
               </p>
             </Reveal>
             <Reveal custom={3}>
               <p className="mt-5 text-base leading-relaxed text-steel-600">
                 Today we are a trusted name in non-ferrous metals and scrap, serving clients across India and global
-                markets. Driven by our Bhiwandi warehouse, our operations are fast, efficient and reliable — built to
+                markets. Driven by our Bhiwandi warehouse, our operations are fast, efficient and reliable, built to
                 deliver without compromise.
               </p>
             </Reveal>

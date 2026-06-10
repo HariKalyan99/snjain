@@ -20,7 +20,7 @@ export default function GlobalPresence() {
         index="05"
         eyebrow="Global Presence"
         title={['Rooted in India.', 'Trading worldwide.']}
-        intro="A Bhiwandi hub connected to international trade corridors — moving non-ferrous metal across borders with clean documentation and predictable logistics."
+        intro="A Bhiwandi hub connected to international trade corridors, moving non-ferrous metal across borders with clean documentation and predictable logistics."
         image={media.hero.images.mainbg4}
       />
 

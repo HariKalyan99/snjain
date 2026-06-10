@@ -16,7 +16,7 @@ export default function Materials() {
         index="03"
         eyebrow="Materials & Products"
         title={['Non-ferrous metals,', 'graded for industry.']}
-        intro="Aluminium, copper, brass and refined industrial metals — sorted, inspected and prepared for re-melting, extrusion and manufacturing."
+        intro="Aluminium, copper, brass and refined industrial metals, sorted, inspected and prepared for re-melting, extrusion and manufacturing."
         image={media.materials.copper}
       />
 

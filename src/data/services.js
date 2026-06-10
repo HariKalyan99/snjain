@@ -20,7 +20,7 @@ export const services = [
     no: '03',
     title: 'Metal Recycling',
     short: 'Processing recovered metal back into productive use.',
-    body: 'Recovered aluminium, copper, brass and other non-ferrous metals are sorted, processed and prepared for re-melting and re-use. Recycling sits at the centre of the business — keeping valuable metal in circulation.',
+    body: 'Recovered aluminium, copper, brass and other non-ferrous metals are sorted, processed and prepared for re-melting and re-use. Recycling sits at the centre of the business, keeping valuable metal in circulation.',
     points: ['Sorting & segregation', 'Contaminant removal', 'Furnace-ready material', 'Circular supply'],
   },
   {
@@ -44,7 +44,7 @@ export const services = [
     no: '06',
     title: 'Supply Chain Support',
     short: 'Planning support that keeps material flowing.',
-    body: 'Beyond a single order, we work as a supply partner — holding buffer stock, scheduling recurring deliveries and flagging market shifts early so your procurement team can plan with confidence.',
+    body: 'Beyond a single order, we work as a supply partner, holding buffer stock, scheduling recurring deliveries and flagging market shifts early so your procurement team can plan with confidence.',
     points: ['Buffer stock holding', 'Scheduled deliveries', 'Demand planning', 'Early market signals'],
   },
   {

@@ -57,7 +57,7 @@ export default function Industries() {
                   ['Programme supply', 'Recurring deliveries scheduled around your production calendar, with buffer stock held against demand.'],
                   ['Specification matching', 'Grades and alloys sourced to the exact chemistry and form your process requires.'],
                   ['Documented consignments', 'Every dispatch is weighed, graded and documented so goods-inward matches the purchase order.'],
-                  ['Single point of contact', 'A direct line to our desk for pricing, availability and logistics — no layers in between.'],
+                  ['Single point of contact', 'A direct line to our desk for pricing, availability and logistics, with no layers in between.'],
                 ].map(([title, body], i) => (
                   <Reveal key={title} custom={i} className="border-b border-steel-200 py-7">
                     <h3 className="font-display text-xl font-bold uppercase tracking-tight text-ink">{title}</h3>

@@ -12,7 +12,7 @@ export default function Services() {
         index="02"
         eyebrow="Services"
         title={['Full-chain metal', 'trade & supply.']}
-        intro="From procurement to final dispatch, every link in the chain is handled in-house — so material arrives graded, documented and on schedule."
+        intro="From procurement to final dispatch, every link in the chain is handled in-house, so material arrives graded, documented and on schedule."
         image={media.hero.images.mainbg2}
       />
 

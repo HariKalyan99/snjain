@@ -44,6 +44,7 @@ export const media = {
       aluminiumAcPunching: j(7),
       aluminiumCable: j(8),
       aluminium6063: j(9),
+      aluminiumFoil: j(14),
       copperPipe: j(16),
       copperWire: j(17),
       brassHoney: j(18),

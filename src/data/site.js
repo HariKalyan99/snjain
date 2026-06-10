@@ -46,7 +46,7 @@ export const industries = [
 /** Hub is always index 0 (Bhiwandi). lat/lng used by the trade map. */
 export const regions = [
   {
-    name: 'Domestic — India',
+    name: 'Domestic, India',
     role: 'Core supply network',
     mapLabel: 'Bhiwandi',
     lat: 19.2813,
@@ -76,9 +76,9 @@ export const regions = [
   {
     name: 'Global Markets',
     role: 'International reach',
-    mapLabel: 'Rotterdam',
-    lat: 51.9244,
-    lng: 4.4777,
+    mapLabel: 'USA, Europe & London',
+    lat: 51.5074,
+    lng: -0.1278,
     body: 'We trade with buyers and suppliers internationally, moving material across borders with predictable logistics and full compliance.',
     points: ['Cross-border trade', 'Export documentation', 'Logistics oversight'],
   },
@@ -87,7 +87,7 @@ export const regions = [
 export const globalStats = [
   { value: 25, suffix: '+', label: 'Markets served' },
   { value: 4, suffix: '', label: 'Trade corridors' },
-  { value: 1, suffix: '', label: 'Strategic hub — Bhiwandi' },
+  { value: 1, suffix: '', label: 'Strategic hub, Bhiwandi' },
 ];
 
 export const sustainabilityImpact = [
@@ -99,7 +99,7 @@ export const sustainabilityImpact = [
 export const sustainabilityPillars = [
   {
     title: 'Circular economy',
-    body: 'Every tonne we recover and return to manufacturing is a tonne that does not need to be mined. Recycling is not an add-on to our business — it is the business.',
+    body: 'Every tonne we recover and return to manufacturing is a tonne that does not need to be mined. Recycling is not an add-on to our business. It is the business.',
   },
   {
     title: 'Resource recovery',
@@ -131,7 +131,7 @@ export const infrastructure = [
   {
     no: '03',
     title: 'Processing',
-    body: 'Recovered metal is processed and prepared for re-melting and re-use — furnace-ready material that performs to expectation.',
+    body: 'Recovered metal is processed and prepared for re-melting and re-use, furnace-ready material that meets expectations.',
     image: media.infrastructure.processing,
   },
   {

@@ -1,14 +1,14 @@
 const whatsappPhone = '919820335175';
 
 export const whatsappMessage =
-  'Hello, I would like to inquire about non-ferrous metals, scrap trading, or recycling solutions with Sha Mulchand Navalram Jain.';
+  'Hello, I would like to enquire about non-ferrous metals, scrap trading, or recycling solutions with Sha Mulchand Navalram Jain.';
 
 export const company = {
   legalName: 'Sha Mulchand Navalram Jain',
   shortName: 'SMNJ',
   established: 1965,
   tagline: 'Non-Ferrous Metals · Scrap · Recycling',
-  phone: '+91 98203 35175',
+  phoneLabel: 'Call us',
   phoneHref: 'tel:+919820335175',
   whatsapp: `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(whatsappMessage)}`,
   email: 'shamnjain@yahoo.in',
@@ -21,7 +21,7 @@ export const company = {
     serving: 'India & International Markets',
   },
   hours: [
-    { day: 'Monday – Saturday', time: '09:30 — 19:00 IST' },
+    { day: 'Monday – Saturday', time: '09:30 – 19:00 IST' },
     { day: 'Sunday', time: 'By appointment' },
   ],
 };
@@ -58,7 +58,7 @@ export const values = [
   {
     no: '01',
     title: 'Integrity',
-    body: 'The business was built on doing trade honestly. Quoted grades match delivered grades — every time.',
+    body: 'The business was built on doing trade honestly. Quoted grades match delivered grades, every time.',
   },
   {
     no: '02',
@@ -81,7 +81,7 @@ export const milestones = [
   {
     year: '1965',
     title: 'The beginning',
-    body: 'Sha Mulchand Navalram Jain is founded on a simple principle — conduct metal trade with integrity. That principle still defines the firm today.',
+    body: 'Sha Mulchand Navalram Jain was founded on a simple principle: to trade metals with integrity. That principle still defines the firm today.',
   },
   {
     year: '1980s',
@@ -101,6 +101,6 @@ export const milestones = [
   {
     year: 'Forward',
     title: 'Responsible recycling',
-    body: 'A long-term commitment to the circular economy — keeping non-ferrous metal in productive use, generation after generation.',
+    body: 'A long-term commitment to the circular economy, keeping non-ferrous metal in productive use, generation after generation.',
   },
 ];

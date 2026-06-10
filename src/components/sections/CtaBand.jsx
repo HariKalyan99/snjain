@@ -1,5 +1,6 @@
 import Reveal from '../ui/Reveal';
 import Button from '../ui/Button';
+import { PhoneIcon } from '../ui/PhoneLink';
 import { useQuote } from '../../context/QuoteContext';
 import { company } from '../../data/company';
 
@@ -23,7 +24,10 @@ export default function CtaBand({
               Request a Quote
             </Button>
             <Button variant="ghost" href={company.phoneHref} arrow={false}>
-              {company.phone}
+              <span className="inline-flex items-center gap-2.5">
+                <PhoneIcon className="h-4 w-4" />
+                Call us
+              </span>
             </Button>
           </Reveal>
         </div>

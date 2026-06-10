@@ -6,6 +6,7 @@ import { useQuote } from '../context/QuoteContext';
 import { company } from '../data/company';
 import { media } from '../data/media';
 import ContactMap from '../components/contact/ContactMap';
+import PhoneLink from '../components/ui/PhoneLink';
 
 function istTime() {
   return new Date().toLocaleString('en-IN', {
@@ -61,7 +62,7 @@ export default function Contact() {
         index="08"
         eyebrow="Contact"
         title={['Let’s talk', 'material.']}
-        intro="Procurement teams, manufacturers and exporters — reach our desk directly for availability, grades, pricing and logistics."
+        intro="Procurement teams, manufacturers and exporters can reach our desk directly for availability, grades, pricing and logistics."
         image={media.hero.images.mainbg2}
       />
 
@@ -131,10 +132,15 @@ export default function Contact() {
             <div className="md:col-span-5 md:border-t md:border-steel-100 md:pt-12 lg:border-l lg:border-t-0 lg:pt-0 lg:pl-16">
               <Reveal className="space-y-10">
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-red">Call</p>
-                  <a href={company.phoneHref} className="mt-3 block font-display text-2xl font-bold text-ink hover:text-red">
-                    {company.phone}
-                  </a>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-red">Phone</p>
+                  <PhoneLink
+                    className="mt-3 text-ink hover:text-red"
+                    iconClassName="h-5 w-5 shrink-0"
+                    textClassName="font-display text-2xl font-bold"
+                  />
+                  <p className="mt-2 text-xs text-steel-400">
+                    {company.hours[0].day}, {company.hours[0].time}
+                  </p>
                 </div>
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-red">Email</p>

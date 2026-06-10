@@ -14,7 +14,7 @@ export default function About() {
         index="01"
         eyebrow="About Us"
         title={['Three generations', 'of metal trade.']}
-        intro="A family enterprise built on integrity since 1965 — supplying non-ferrous metals and scrap to industry across India and global markets."
+        intro="A family enterprise built on integrity since 1965, supplying non-ferrous metals and scrap to industries across India and global markets."
         image={media.about.hero}
       />
 
@@ -25,7 +25,7 @@ export default function About() {
           <div className="md:col-span-2 lg:col-span-7">
               <Reveal>
                 <p className="font-display text-2xl font-bold uppercase leading-[1.15] tracking-tight text-ink sm:text-3xl lg:text-4xl">
-                  Sha Mulchand Navalram Jain was built on a single idea — to do business with integrity. Over
+                  Sha Mulchand Navalram Jain was built on a single idea: to do business with integrity. Over
                   generations, that idea became a legacy defined by trust, precision and quiet excellence.
                 </p>
               </Reveal>
@@ -39,7 +39,7 @@ export default function About() {
               </Reveal>
               <Reveal custom={2}>
                 <p className="mt-5 text-base leading-relaxed text-steel-600">
-                  Driven by our Bhiwandi warehouse, our operations are fast, efficient and reliable — built to deliver
+                  Driven by our Bhiwandi warehouse, our operations are fast, efficient and reliable, built to deliver
                   without compromise. More than suppliers, we are partners focused on building lasting value.
                 </p>
               </Reveal>
@@ -55,7 +55,7 @@ export default function About() {
             <Reveal className="bg-steel-50 p-10 lg:p-14">
               <span className="eyebrow">Mission</span>
               <p className="mt-7 font-display text-2xl font-bold uppercase leading-[1.15] tracking-tight text-ink lg:text-3xl">
-                To supply industry with non-ferrous metal it can depend on — graded accurately, delivered consistently
+                To supply industry with non-ferrous metal it can depend on, graded accurately, delivered consistently
                 and traded honestly.
               </p>
             </Reveal>

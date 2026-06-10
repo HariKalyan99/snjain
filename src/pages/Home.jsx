@@ -17,7 +17,8 @@ const marqueeItems = [
   'Tin',
   'Lead',
   'Recycling',
-  'Export',
+  'Imports',
+  'Exports',
   'Sourcing',
 ];
 

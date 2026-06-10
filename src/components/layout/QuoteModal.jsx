@@ -140,7 +140,7 @@ export default function QuoteModal() {
 
               {status === 'success' && (
                 <p className="text-sm font-medium text-green-600">
-                  Thank you — your request has been received. We will be in touch shortly.
+                  Thank you. Your request has been received. We will be in touch shortly.
                 </p>
               )}
               {status === 'error' && (

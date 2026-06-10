@@ -13,7 +13,7 @@ export default function MaterialsPreview() {
           <SectionHeading
             eyebrow="Materials & Products"
             title={['Non-ferrous metals,', 'sorted to grade.']}
-            intro="Aluminium, copper, brass and refined industrial metals — classified, inspected and ready for re-melting, extrusion and manufacturing."
+            intro="Aluminium, copper, brass and refined industrial metals, classified, inspected and ready for re-melting, extrusion and manufacturing."
           />
           <div className="hidden lg:block">
             <Button variant="outline" to="/materials">

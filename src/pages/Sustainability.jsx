@@ -15,7 +15,7 @@ export default function Sustainability() {
         index="06"
         eyebrow="Sustainability"
         title={['Metal kept in', 'productive use.']}
-        intro="Recycling is not a programme bolted on to our business — it is the business. Every tonne recovered is a tonne that does not need to be mined."
+        intro="Recycling is not a programme bolted on to our business. It is the business. Every tonne recovered is a tonne that does not need to be mined."
         image={media.sustainability.hero}
       />
 
@@ -25,7 +25,7 @@ export default function Sustainability() {
           <Reveal>
             <p className="max-w-4xl font-display text-2xl font-bold uppercase leading-[1.15] tracking-tight text-ink sm:text-3xl lg:text-4xl">
               Non-ferrous metals can be recycled again and again with no loss of properties. By recovering, sorting and
-              re-supplying them, we keep their value in circulation — and out of landfill.
+              re-supplying them, we keep their value in circulation and out of landfill.
             </p>
           </Reveal>
         </div>
