@@ -5,7 +5,9 @@ import { company } from '../../data/company';
 import { materials } from '../../data/materials';
 import { EASE } from '../../lib/motion';
 
-const allGrades = materials.flatMap((m) => m.grades.map((g) => g.name));
+const allGrades = materials.flatMap((m) =>
+  m.grades.filter((g) => g.quote !== false).map((g) => g.name),
+);
 const uniqueGrades = [...new Set(allGrades)];
 
 function istTime() {

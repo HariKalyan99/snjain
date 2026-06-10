@@ -17,7 +17,7 @@ export const materials = [
       { name: 'Aluminium AC Punching Scrap', image: g.aluminiumAcPunching },
       { name: 'Aluminium Cable Wire Scrap', image: g.aluminiumCable },
       { name: '6063 Aluminium Extrusion Scrap', image: g.aluminium6063 },
-      { name: 'Aluminium Foil Wrap', image: g.aluminiumFoil },
+      { name: 'Aluminium Foil Scrap', image: g.aluminiumFoil },
     ],
     specs: ['Sorted by alloy & form', 'Low contamination', 'Furnace & extrusion ready'],
     applications: ['Extrusion', 'Die casting', 'Automotive components', 'Construction sections'],
@@ -44,7 +44,7 @@ export const materials = [
     description:
       'Brass scrap recovered from fittings, fixtures and machined components. Sorted to consistent grades for foundries and brass mills that demand reliable input chemistry.',
     grades: [
-      { name: 'Honey Brass / Taint Tabour', image: g.brassHoney },
+      { name: 'Honey Brass / Taint Tabour', image: g.brassHoney, quote: false },
       { name: 'Mixed Brass', image: g.brassMixed },
     ],
     specs: ['Consistent Cu-Zn ratios', 'Sorted by source', 'Foundry ready'],

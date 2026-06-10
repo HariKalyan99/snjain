@@ -74,6 +74,15 @@ export const regions = [
     points: ['Two-way trade flows', 'Grade-matched supply', 'Port coordination'],
   },
   {
+    name: 'Malaysia',
+    role: 'Southeast Asia corridor',
+    mapLabel: 'Kuala Lumpur',
+    lat: 3.139,
+    lng: 101.6869,
+    body: 'Active trade with Malaysian buyers and suppliers across non-ferrous metals and scrap, supported by reliable port logistics and compliant documentation.',
+    points: ['Port-linked exports', 'Regional sourcing', 'Cross-border compliance'],
+  },
+  {
     name: 'Global Markets',
     role: 'International reach',
     mapLabel: 'USA, Europe & London',
@@ -86,7 +95,7 @@ export const regions = [
 
 export const globalStats = [
   { value: 25, suffix: '+', label: 'Markets served' },
-  { value: 4, suffix: '', label: 'Trade corridors' },
+  { value: 5, suffix: '', label: 'Trade corridors' },
   { value: 1, suffix: '', label: 'Strategic hub, Bhiwandi' },
 ];
 

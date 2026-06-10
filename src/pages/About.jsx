@@ -25,7 +25,7 @@ export default function About() {
           <div className="md:col-span-2 lg:col-span-7">
               <Reveal>
                 <p className="font-display text-2xl font-bold uppercase leading-[1.15] tracking-tight text-ink sm:text-3xl lg:text-4xl">
-                  Sha Mulchand Navalram Jain was built on a single idea: to do business with integrity. Over
+                  Sha Mulchand Navalram Jain was built on a single idea, to do business with integrity. Over
                   generations, that idea became a legacy defined by trust, precision and quiet excellence.
                 </p>
               </Reveal>
