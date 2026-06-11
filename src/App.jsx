@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import SmoothScroll from './lib/SmoothScroll';
 import { QuoteProvider } from './context/QuoteContext';
@@ -12,8 +12,7 @@ const Services = lazy(() => import('./pages/Services'));
 const Materials = lazy(() => import('./pages/Materials'));
 const Industries = lazy(() => import('./pages/Industries'));
 const GlobalPresence = lazy(() => import('./pages/GlobalPresence'));
-const Sustainability = lazy(() => import('./pages/Sustainability'));
-const Infrastructure = lazy(() => import('./pages/Infrastructure'));
+const Operations = lazy(() => import('./pages/Operations'));
 const Contact = lazy(() => import('./pages/Contact'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
@@ -29,8 +28,9 @@ function AnimatedRoutes() {
           <Route path="/materials" element={<Materials />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/global-presence" element={<GlobalPresence />} />
-          <Route path="/sustainability" element={<Sustainability />} />
-          <Route path="/infrastructure" element={<Infrastructure />} />
+          <Route path="/operations" element={<Operations />} />
+          <Route path="/sustainability" element={<Navigate to="/operations" replace />} />
+          <Route path="/infrastructure" element={<Navigate to="/operations" replace />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>

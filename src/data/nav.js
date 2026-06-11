@@ -4,6 +4,5 @@ export const navLinks = [
   { label: 'Materials', to: '/materials' },
   { label: 'Industries', to: '/industries' },
   { label: 'Global', to: '/global-presence' },
-  { label: 'Sustainability', to: '/sustainability' },
-  { label: 'Infrastructure', to: '/infrastructure' },
+  { label: 'Operations', to: '/operations' },
 ];
