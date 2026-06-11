@@ -7,6 +7,7 @@ import { useQuote } from '../../context/QuoteContext';
 import { useNavMenu } from '../../context/NavMenuContext';
 import { EASE } from '../../lib/motion';
 import { media } from '../../data/media';
+import { PhoneIcon } from '../ui/PhoneLink';
 
 export default function Navbar() {
   const { menuOpen, setMenuOpen } = useNavMenu();
@@ -89,11 +90,12 @@ export default function Navbar() {
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <Link
             to="/contact"
-            className={`hidden text-[11px] font-semibold uppercase tracking-[0.16em] transition-colors md:inline ${
+            aria-label="Contact"
+            className={`hidden h-11 w-11 items-center justify-center transition-colors md:inline-flex ${
               dark ? 'text-ink/70 hover:text-ink' : 'text-white/80 hover:text-white'
             }`}
           >
-            Contact
+            <PhoneIcon className="h-5 w-5" />
           </Link>
           <button
             onClick={openQuote}
